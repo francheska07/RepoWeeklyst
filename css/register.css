@@ -1,0 +1,63 @@
+.contain{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 17px;
+}
+
+/*formulario*/
+
+form{
+    background: rgba(151, 151, 151, 0.637);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+input{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    width: 60%;
+    border: none;
+    background-color: #333;
+    color: #eee;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+select{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    width: 60%;
+    border: none;
+    background-color: #333;
+    color: #eee;
+}
+
+select option{
+    background: #1a1919;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input[type="submit"]{
+    background: #1667aa;
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+
+input[type="submit"]:hover{
+    background: rgb(0, 80, 43);
+    box-shadow: 0 0 20px #1667aa;;
+}
