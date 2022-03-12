@@ -1,0 +1,27 @@
+.btn1{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.btn1 button{
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+    background: #1b1b1b;
+    color: #eee;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all linear 0.2s;
+}
+
+.btn1 button:hover{
+    background: #eee;
+    color: #1b1b1b;
+    border-bottom: 2px solid #1b1b1b;
+    border-right: 2px solid #1b1b1b;
+    font-weight: bolder;
+}
