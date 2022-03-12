@@ -1,0 +1,59 @@
+.fichas{
+    width: 50%;
+}
+
+.addF{
+    width: 50%;
+}
+
+.fichas div{
+    background: #000c79;
+    color: #eee;
+    padding: 90px ;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px #111;
+    transition: all linear 0.2s;
+    cursor: pointer;
+}
+
+.fichas div:hover{
+    background: #aaa;
+    color: #333;
+}
+
+.addF div{
+    background: #000c79;
+    color: #eee;
+    padding: 90px ;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px #111;
+    transition: all linear 0.2s;
+    cursor: pointer;
+}
+
+.addF div:hover{
+    background: #aaa;
+    color: #333;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.container .pf{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
