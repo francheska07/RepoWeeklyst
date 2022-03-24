@@ -4,30 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/icono.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="../../img/icono.png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/login.css">
     <title>Ingresar</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="img/logo.png" class="logoNav">
-            </div>
-            <div class="izq">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="der">
-                <a href="login.html">Ingresar</a>
-                <a href="register.html">Registrarse</a>
-            </div>
-        </nav>
-    </header>
+    <?php 
+        include '../navbar.php'; 
+    ?>
     <div class="contain">
         <form action="">
             <label class="title">Ingresar</label>

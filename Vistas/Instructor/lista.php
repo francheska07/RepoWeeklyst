@@ -4,33 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/icono.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/lista.css">
+    <link rel="icon" href="../../img/icono.png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/lista.css">
     <script src="https://kit.fontawesome.com/a0ed1d4853.js" crossorigin="anonymous"></script>
     <title>Weeklyst</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="img/logo.png" class="logoNav">
-            </div>
-            <div class="izq">
-                <ul>
-                    <li><a href="instructor.html">Inicio</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="der">
-                <a href="login.html">Cerrar sesión</a>                
-            </div>
-        </nav>
-    </header>
+    <?php 
+        include '../navbaruser.php'; 
+    ?>
     <div class="contain">
         <div class="cont">            
-            <div class="back"><a href="verFichas.html"><i class="fa-solid fa-circle-arrow-left"></i> Regresar</a></div>
+            <div class="back"><a href="verFichas.php"><i class="fa-solid fa-circle-arrow-left"></i> Regresar</a></div>
             <div><h2>Lista</h2></div>
         </div>
         <table>

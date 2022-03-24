@@ -8,13 +8,24 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-header nav{
+/*--------------------------------------------*/
+/*Header y Navbar*/
+
+header{
+    width: 100%;
+    
+    contain: content;
     background: rgba(151, 151, 151, 0.315);
-    width: 98,9%;
+}
+
+header nav{
+    width: 100%;
     margin: 0 auto;
     padding: 10px;
     display: flex;
     border-bottom: 1px solid #333;
+    contain: content;
+    align-items: center;
 }
 
 header nav ul{
@@ -43,23 +54,29 @@ header nav ul li a:hover{
     box-shadow: 3px 3px 10px #111;
 }
 
+.logo{
+    width: 10%;
+    contain: content;
+    margin: 0 auto;
+}
+
 .logoNav{
-    width: 200px;
-    position: relative;
-    left: 80px;
+    width: 100%;
 }
 
 .izq{
-    position: relative;
-    top: 45px;
-    left: 280px;
+    width: 30%;
+    /*position: relative;
+    left: 280px;*/
+    margin: 0 auto;
     font-size: 1.3rem;
 }
 
 .der{
-    position: relative;
+    /*position: relative;
     top: 47px;
-    left: 490px;
+    left: 490px;*/
+    margin: 0 auto;
 }
 
 .der a{
@@ -77,6 +94,11 @@ header nav ul li a:hover{
     border-radius: 10px;
     box-shadow: 3px 3px 10px #111;
 }
+/* End navbar*/
+
+/*Responsive Navbar*/
+
+/*--------------------------------------------*/
 
 /*Contenido*/
 
@@ -84,8 +106,10 @@ header nav ul li a:hover{
     width: 90%;
     margin: 0 auto;
     margin-top: 45px;
+    contain: content;
     background: rgba(151, 151, 151, 0.637);
     display: flex;
+    align-items: center;
     border-radius: 10px;
     border: 1px solid #888;
     box-shadow: 0 0 70px #1667aa;
@@ -105,8 +129,6 @@ header nav ul li a:hover{
 .text{
     width: 50%;
     padding: 30px;
-    position: relative;
-    top: 60px;
 }
 
 /*Footer*/
@@ -117,6 +139,7 @@ footer{
     width: 100%;
     text-align: center;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     border-top: 1px solid #333;
+    font-size: 20px;
 }

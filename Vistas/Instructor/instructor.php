@@ -4,40 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/icono.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/instructor.css">
+    <link rel="icon" href="../../img/icono.png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/instructor.css">
     <script src="https://kit.fontawesome.com/a0ed1d4853.js" crossorigin="anonymous"></script>
     <title>Weeklyst</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="img/logo.png" class="logoNav">
-            </div>
-            <div class="izq">
-                <ul>
-                    <li><a href="instructor.html">Inicio</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="der">                
-                <a href="login.html">Cerrar sesión</a>
-            </div>
-        </nav>
-    </header>
+    <?php 
+        include '../navbaruser.php'; 
+    ?>
     <div class="container">
         <div class="imagen">
-            <img src="img/icono.png" class="img1">
+            <img src="../../img/icono.png" class="img1">
         </div>
         <div class="text">
             <h1>Instructor</h1><br>            
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aliquam necessitatibus doloremque reprehenderit corrupti. Aliquid obcaecati omnis, voluptatum accusamus dolorum iure ea est officiis distinctio soluta eligendi impedit iste sequi?</p>            
             <br><br>
             <div class="btn1">                
-                <a href="fichas.html"><button><i class="fa-solid fa-list-check"></i> Fichas</button></a>
+                <a href="fichas.php"><button><i class="fa-solid fa-list-check"></i> Fichas</button></a>
             </div>
         </div>
     </div>

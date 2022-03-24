@@ -4,33 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/icono.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/verFichas.css">
+    <link rel="icon" href="../../img/icono.png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/verFichas.css">
     <script src="https://kit.fontawesome.com/a0ed1d4853.js" crossorigin="anonymous"></script>
     <title>Weeklyst</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="img/logo.png" class="logoNav">
-            </div>
-            <div class="izq">
-                <ul>
-                    <li><a href="instructor.html">Inicio</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="der">
-                <a href="login.html">Cerrar sesión</a>                
-            </div>
-        </nav>
-    </header>
+    <?php 
+        include '../navbaruser.php'; 
+    ?>
     <div class="contain">
         <div class="cont">            
-            <div class="back"><a href="fichas.html"><i class="fa-solid fa-circle-arrow-left"></i> Regresar</a></div>
+            <div class="back"><a href="fichas.php"><i class="fa-solid fa-circle-arrow-left"></i> Regresar</a></div>
             <div><h2>Fichas</h2></div>
         </div>
         <table>
@@ -44,7 +30,7 @@
                     <td>ADSI</td>
                 </tr>
                 <tr>
-                    <td><a href="lista.html">2251038 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+                    <td><a href="lista.php">2251038 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
                     <td>ADSI</td>
                 </tr>
                 <tr>
