@@ -13,7 +13,6 @@ body{
 
 header{
     width: 100%;
-    
     contain: content;
     background: rgba(151, 151, 151, 0.315);
 }
@@ -142,4 +141,16 @@ footer{
     bottom: 0px;
     border-top: 1px solid #333;
     font-size: 20px;
+}
+
+.link{
+    text-align: center;
+    color: #eee;
+    transition: all 0.2s;
+}
+
+.link:hover{
+    color:#0024ee;
+    text-shadow: 3px 3px 8px #111;
+    text-decoration: none;
 }

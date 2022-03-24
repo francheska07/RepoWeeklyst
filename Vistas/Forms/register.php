@@ -15,15 +15,15 @@
     ?>
     <div class="contain">
         <form action="">
-            <label class="title">Registrarse</label>
-            <br><br>
+            <label class="title">Registrarse | </label>
+            <a href="login.php" class="link">Ya tengo una cuenta</a><br><br>
             <label for="">Nombre</label><br>
             <input type="text" placeholder="Ingrese su nombre completo"><br>
             <label for="">Apellidos</label><br>
             <input type="text" placeholder="Ingrese sus apellidos"><br>
             <label for="">Tipo de documento</label><br>
             <select name="" id="">
-                <option value="">-Seleccionar-</option>
+                <option value="">--Seleccionar--</option>
                 <option value="">Tarjeta de identidad</option>
                 <option value="">Cédula de ciudadanía</option>
                 <option value="">Cédula extranjera</option>
@@ -32,10 +32,12 @@
             <input type="text" placeholder="Ingrese su número de documento"><br>
             <label for="">Rol</label><br>
             <select name="" id="">
-                <option value="">-Seleccionar-</option>
+                <option value="">--Seleccionar--</option>
                 <option value="">Aprendiz</option>
                 <option value="">Instructor</option>
             </select><br>
+            <label for="">Correo electrónico</label><br>
+            <input type="email" placeholder="Ingrese su correo electrónico"><br>
             <label for="">Contraseña</label><br>
             <input type="password" placeholder="Cree su contraseña"><br>
             <input type="submit" value="Registrarse">

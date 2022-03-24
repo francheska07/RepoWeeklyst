@@ -1,49 +1,37 @@
 .contain{
-    width: 40%;
+    width: 70%;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 100px;
+    background: rgba(151, 151, 151, 0.637);
+    border-radius: 20px;
 }
 
 /*formulario*/
 
 form{
-    background: rgba(151, 151, 151, 0.637);
-    border-radius: 20px;
     padding: 20px;
     text-align: center;
     contain: content;
 }
 
 .title{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     color: #333;
 }
 
+label{
+    font-size: 18px;
+}
+
 input{
-    margin: 5px;
+    font-size: 16px;
+    margin: 10px;
     padding: 5px;
     text-align: center;
     width: 60%;
     border: none;
     background-color: #333;
-    color: #eee;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-select{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 5px;
-    padding: 5px;
-    text-align: center;
-    width: 50%;
-    border: none;
-    background-color: #333;
-    color: #777;
-}
-
-select option{
-    background: #1a1919;
     color: #eee;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -64,14 +52,29 @@ input[type="submit"]:hover{
     box-shadow: 0 0 20px #1667aa;;
 }
 
-.link{
-    text-align: center;
-    color: #eee;
-    transition: all 0.2s;
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
 }
 
-.link:hover{
-    color:#aeb6d1;
-    text-shadow: 3px 3px 8px #111;
+.back a{
+    border-radius: 20px;
+    border-bottom: 2px solid #eee;
+    border-right: 2px solid #eee;
+    padding: 15px;
+    background: #1667aa;
     text-decoration: none;
+    font-size: 1.3rem;
+    color: #eee;
+    transition: all linear 0.2s;
+}
+
+.back a:hover{
+    background: #333;
+    color: #224fca;
+    border-bottom: 2px solid #224fca;
+    border-right: 2px solid #224fca;
 }

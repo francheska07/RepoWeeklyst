@@ -15,12 +15,12 @@
     ?>
     <div class="contain">
         <form action="">
-            <label class="title">Ingresar</label>
-            <br><br>            
+            <label class="title">Ingresar | </label><a href="register.php" class="link">No tengo una cuenta</a><br><br>
             <label for="">Número de documento</label><br>
             <input type="text" placeholder="Ingrese su número de documento"><br>
             <label for="">Contraseña</label><br>
             <input type="password" placeholder="Ingrese su contraseña"><br>
+            <a href="#" class="link">Olvidé mi contraseña</a><br>
             <input type="submit" value="Ingresar">
         </form>
     </div>

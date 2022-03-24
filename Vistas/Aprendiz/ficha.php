@@ -12,16 +12,16 @@
 </head>
 <body>
     <?php 
-        include '../navbaruser.php'; 
+        include '../navbaraprendiz.php'; 
     ?>
     <div class="container">
         <div class="fichas">
-            <a href="verFichas.php"><div><label><i class="fa-solid fa-eye"></i> Ver Fichas</label></div></a>
+            <a href="verLista.php"><div><label><i class="fa-solid fa-file-pen"></i> Registro de Asistencia</label></div></a>
             <br>            
             <p class="pf">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui voluptates atque vero harum explicabo doloribus deserunt eveniet nulla iusto porro nemo, voluptatum ab commodi velit. Quos quas repellendus fugit quis!</p><br>
         </div>
         <div class="addF">
-            <a href="agregarFicha.php"><div><label><i class="fa-solid fa-folder-plus"></i> Agregar Ficha</label></div></a>
+            <a href="agregarFicha.php"><div><label><i class="fa-solid fa-thumbtack"></i> Fijar una Ficha</label></div></a>
             <br>
             <p class="pf">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui voluptates atque vero harum explicabo doloribus deserunt eveniet nulla iusto porro nemo, voluptatum ab commodi velit. Quos quas repellendus fugit quis!</p><br>
         </div>

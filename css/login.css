@@ -46,3 +46,15 @@ input[type="submit"]:hover{
     background: rgb(0, 80, 43);
     box-shadow: 0 0 20px #1667aa;;
 }
+
+.link{
+    text-align: center;
+    color: #eee;
+    transition: all 0.2s;
+}
+
+.link:hover{
+    color:#aeb6d1;
+    text-shadow: 3px 3px 8px #111;
+    text-decoration: none;
+}

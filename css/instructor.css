@@ -4,13 +4,14 @@
 }
 
 .btn1 button{
+    contain: content;
     padding: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.3rem;
     border: none;
     border-radius: 10px;
-    background: #1b1b1b;
-    color: #eee;
+    background: #eee;
+    color: #1b1b1b;
     border-bottom: 2px solid #fff;
     border-right: 2px solid #fff;
     cursor: pointer;
@@ -19,8 +20,8 @@
 }
 
 .btn1 button:hover{
-    background: #eee;
-    color: #1b1b1b;
+    background: #1b1b1b;
+    color: #eee;
     border-bottom: 2px solid #1b1b1b;
     border-right: 2px solid #1b1b1b;
     font-weight: bolder;
