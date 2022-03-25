@@ -1,0 +1,105 @@
+
+CREATE DATABASE IF NOT EXISTS `weeklystbd` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `weeklystbd`;
+
+CREATE TABLE `fichas` (
+  `id_ficha` int(11) NOT NULL,
+  `nombre_programa` varchar(200) NOT NULL,
+  `num_ficha` varchar(50) NOT NULL,
+  `id_user` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `fichas` (`id_ficha`, `nombre_programa`, `num_ficha`, `id_user`) VALUES
+(1, 'ADSI', '2141041', 1),
+(2, 'ADSI', '2141041', 2);
+
+CREATE TABLE `lista` (
+  `id_lista` int(11) NOT NULL,
+  `fecha` date NOT NULL,
+  `id_aprendiz` int(11) NOT NULL,
+  `id_registro` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `lista` (`id_lista`, `fecha`, `id_aprendiz`, `id_registro`) VALUES
+(1, '2022-03-28', 2, 1);
+
+CREATE TABLE `registros` (
+  `id_registros` int(11) NOT NULL,
+  `descripcion` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `registros` (`id_registros`, `descripcion`) VALUES
+(1, 'Asiste'),
+(2, 'Falla'),
+(3, 'Excusa');
+
+CREATE TABLE `rol` (
+  `id_user` int(11) NOT NULL,
+  `descripcion` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `rol` (`id_user`, `descripcion`) VALUES
+(1, 'Instructor'),
+(2, 'Aprendiz');
+
+CREATE TABLE `usuario` (
+  `id_usuario` int(11) NOT NULL,
+  `nombre` varchar(100) NOT NULL,
+  `apellido` varchar(100) NOT NULL,
+  `tipo_docu` varchar(50) NOT NULL,
+  `num_docu` varchar(50) NOT NULL,
+  `id_rol` int(11) NOT NULL,
+  `correo` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `usuario` (`id_usuario`, `nombre`, `apellido`, `tipo_docu`, `num_docu`, `id_rol`, `correo`, `password`) VALUES
+(1, 'Mario', 'Marín', 'C.C.', '1587496326', 1, 'mariom15@misena.edu.co', 'ositosexy123'),
+(2, 'Valerie', 'Puentes', 'C.C.', '1036587402', 2, 'valerip55@misena.edu.co', '123456789');
+
+ALTER TABLE `fichas`
+  ADD PRIMARY KEY (`id_ficha`),
+  ADD KEY `id_user` (`id_user`);
+
+ALTER TABLE `lista`
+  ADD PRIMARY KEY (`id_lista`),
+  ADD KEY `id_aprendiz` (`id_aprendiz`),
+  ADD KEY `id_aprendiz_2` (`id_aprendiz`),
+  ADD KEY `id_registro` (`id_registro`);
+
+ALTER TABLE `registros`
+  ADD PRIMARY KEY (`id_registros`);
+
+ALTER TABLE `rol`
+  ADD PRIMARY KEY (`id_user`);
+
+ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`id_usuario`),
+  ADD KEY `id_rol` (`id_rol`);
+
+ALTER TABLE `fichas`
+  MODIFY `id_ficha` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+ALTER TABLE `lista`
+  MODIFY `id_lista` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+ALTER TABLE `registros`
+  MODIFY `id_registros` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+ALTER TABLE `rol`
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+ALTER TABLE `usuario`
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+ALTER TABLE `fichas`
+  ADD CONSTRAINT `fichas_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `usuario` (`id_usuario`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE `lista`
+  ADD CONSTRAINT `lista_ibfk_1` FOREIGN KEY (`id_registro`) REFERENCES `registros` (`id_registros`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `lista_ibfk_2` FOREIGN KEY (`id_aprendiz`) REFERENCES `usuario` (`id_usuario`);
+
+ALTER TABLE `usuario`
+  ADD CONSTRAINT `usuario_ibfk_1` FOREIGN KEY (`id_rol`) REFERENCES `rol` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE;
+COMMIT;
+
