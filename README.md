@@ -1,2 +1,2 @@
 # RepoWeeklyst
-Diseño y desarrollo del aplicativo web para tomar lista de asistencia
+Análisis y desarrollo de un aplicativo web para gestionar la asistencia a clases de una institución
