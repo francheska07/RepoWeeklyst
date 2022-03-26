@@ -16,14 +16,14 @@
     ?>
     <div class="contain">
         <div>
-            <form action="">
+            <form action="AgregarFichas/agregarFichas.php" method="post">
             <div class="back"><a href="fichas.php"><i class="fa-solid fa-circle-arrow-left"></i> Regresar</a>
             <label for="" class="title">Agregar Fichas</label></div><br><br>
                 <label for="">Nombre del programa de formación</label><br>
-                <input type="text" placeholder="Escriba el nombre del programa"><br>
+                <input type="text" name="nom_program" placeholder="Escriba el nombre del programa"><br>
                 <label for="">Número de Ficha</label><br>
-                <input type="text" placeholder="Ingrese el número de la ficha correspondiente al programa"><br><br>
-                <input type="submit" value="Guardar">
+                <input type="text" name="num_ficha" placeholder="Ingrese el número de la ficha correspondiente al programa"><br><br>
+                <input type="submit" name="btn" value="Guardar">
             </form>
         </div>
     </div>
