@@ -14,19 +14,20 @@
         include '../navbar.php'; 
     ?>
     <div class="contain">
-        <form action="Procesos/procesoLogin.php" method="post">
+        <form action="" id="formulario">
             <label class="title">Ingresar | </label><a href="register.php" class="link">No tengo una cuenta</a><br><br>
             <label for="">Número de documento</label><br>
-            <input type="text" name="num_docu" placeholder="Ingrese su número de documento"><br>
+            <input id="documento" type="text" placeholder="Ingrese su número de documento"><br>
             <label for="">Contraseña</label><br>
-            <input type="password" name="pass" placeholder="Ingrese su contraseña"><br>
+            <input id="Contraseña" type="password" placeholder="Ingrese su contraseña"><br>
             <a href="#" class="link">Olvidé mi contraseña</a><br>
-            <input type="submit" name="btn" value="Ingresar">
+            <input type="submit" value="Ingresar">
         </form>
     </div>
     <footer>
         Todos los derechos reservados - ©Weeklyst 2020
     </footer>
+    <script src="../../js/validacionLogin.js"></script>
 </body>
 </html>
 </body>
